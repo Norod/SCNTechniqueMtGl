@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E89849F021870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = E89849EF21870DB700FE2AE5 /* sDisplacementMappingShader.metal */; };
+		E89849F121870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = E89849EF21870DB700FE2AE5 /* sDisplacementMappingShader.metal */; };
+		E89849F221870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = E89849EF21870DB700FE2AE5 /* sDisplacementMappingShader.metal */; };
+		E89849F321870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = E89849EF21870DB700FE2AE5 /* sDisplacementMappingShader.metal */; };
+		E8E4E9CB2185D83900663295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9CA2185D83900663295 /* AppDelegate.m */; };
+		E8E4E9CE2185D83900663295 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9CD2185D83900663295 /* GameViewController.m */; };
+		E8E4E9D12185D83900663295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9CF2185D83900663295 /* Main.storyboard */; };
+		E8E4E9D42185D83A00663295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9D22185D83A00663295 /* LaunchScreen.storyboard */; };
+		E8E4E9D72185D83A00663295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9D62185D83A00663295 /* main.m */; };
+		E8E4E9DB2185D83A00663295 /* SCNTechnique.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8E4E9DA2185D83A00663295 /* SCNTechnique.app */; };
+		E8E4E9E12185D83A00663295 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9DF2185D83A00663295 /* Interface.storyboard */; };
+		E8E4E9E82185D83A00663295 /* SCNTechnique Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8E4E9E72185D83A00663295 /* SCNTechnique Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8E4E9EE2185D83A00663295 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9ED2185D83A00663295 /* InterfaceController.m */; };
+		E8E4E9F12185D83A00663295 /* ExtensionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9F02185D83A00663295 /* ExtensionDelegate.m */; };
+		E8E4E9FB2185D83A00663295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9FA2185D83A00663295 /* AppDelegate.m */; };
+		E8E4E9FE2185D83A00663295 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9FD2185D83A00663295 /* GameViewController.m */; };
+		E8E4EA012185D83A00663295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9FF2185D83A00663295 /* Main.storyboard */; };
+		E8E4EA042185D83A00663295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4EA032185D83A00663295 /* main.m */; };
+		E8E4EA0D2185D83A00663295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4EA0C2185D83A00663295 /* AppDelegate.m */; };
+		E8E4EA102185D83A00663295 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4EA0F2185D83A00663295 /* GameViewController.m */; };
+		E8E4EA132185D83A00663295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA112185D83A00663295 /* Main.storyboard */; };
+		E8E4EA162185D83A00663295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4EA152185D83A00663295 /* main.m */; };
+		E8E4EA172185D83A00663295 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9BF2185D83700663295 /* GameController.m */; };
+		E8E4EA182185D83A00663295 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9BF2185D83700663295 /* GameController.m */; };
+		E8E4EA192185D83A00663295 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9BF2185D83700663295 /* GameController.m */; };
+		E8E4EA1A2185D83A00663295 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E4E9BF2185D83700663295 /* GameController.m */; };
+		E8E4EA1B2185D83A00663295 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C02185D83700663295 /* Art.scnassets */; };
+		E8E4EA1C2185D83A00663295 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C02185D83700663295 /* Art.scnassets */; };
+		E8E4EA1D2185D83A00663295 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C02185D83700663295 /* Art.scnassets */; };
+		E8E4EA1E2185D83A00663295 /* Art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C02185D83700663295 /* Art.scnassets */; };
+		E8E4EA1F2185D83A00663295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C12185D83900663295 /* Assets.xcassets */; };
+		E8E4EA202185D83A00663295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C12185D83900663295 /* Assets.xcassets */; };
+		E8E4EA212185D83A00663295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C12185D83900663295 /* Assets.xcassets */; };
+		E8E4EA222185D83A00663295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8E4E9C12185D83900663295 /* Assets.xcassets */; };
+		E8E4EA382185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA372185E3CA00663295 /* sDisplacementMappingTechnique.json */; };
+		E8E4EA392185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA372185E3CA00663295 /* sDisplacementMappingTechnique.json */; };
+		E8E4EA3A2185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA372185E3CA00663295 /* sDisplacementMappingTechnique.json */; };
+		E8E4EA3B2185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA372185E3CA00663295 /* sDisplacementMappingTechnique.json */; };
+		E8E4EA3D2185E5A300663295 /* sDisplacementMappingShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA3C2185E5A300663295 /* sDisplacementMappingShader.vsh */; };
+		E8E4EA3E2185E5A300663295 /* sDisplacementMappingShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA3C2185E5A300663295 /* sDisplacementMappingShader.vsh */; };
+		E8E4EA3F2185E5A300663295 /* sDisplacementMappingShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA3C2185E5A300663295 /* sDisplacementMappingShader.vsh */; };
+		E8E4EA412185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA402185E5EC00663295 /* sDisplacementMappingShader.fsh */; };
+		E8E4EA422185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA402185E5EC00663295 /* sDisplacementMappingShader.fsh */; };
+		E8E4EA432185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA402185E5EC00663295 /* sDisplacementMappingShader.fsh */; };
+		E8E4EA442185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA402185E5EC00663295 /* sDisplacementMappingShader.fsh */; };
+		E8E4EA4A2185E94900663295 /* sDisplacementMappingShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA3C2185E5A300663295 /* sDisplacementMappingShader.vsh */; };
+		E8E4EA51218600B900663295 /* mirror-noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA50218600B800663295 /* mirror-noise.jpg */; };
+		E8E4EA52218600B900663295 /* mirror-noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA50218600B800663295 /* mirror-noise.jpg */; };
+		E8E4EA53218600B900663295 /* mirror-noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA50218600B800663295 /* mirror-noise.jpg */; };
+		E8E4EA54218600B900663295 /* mirror-noise.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA50218600B800663295 /* mirror-noise.jpg */; };
+		E8E4EA562186024700663295 /* alpha-mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA552186024700663295 /* alpha-mask.jpg */; };
+		E8E4EA572186024700663295 /* alpha-mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA552186024700663295 /* alpha-mask.jpg */; };
+		E8E4EA582186024700663295 /* alpha-mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA552186024700663295 /* alpha-mask.jpg */; };
+		E8E4EA592186024700663295 /* alpha-mask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E8E4EA552186024700663295 /* alpha-mask.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8E4E9DC2185D83A00663295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E4E9B92185D83700663295 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E4E9D92185D83A00663295;
+			remoteInfo = "SCNTechnique watchOS App";
+		};
+		E8E4E9E92185D83A00663295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8E4E9B92185D83700663295 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8E4E9E62185D83A00663295;
+			remoteInfo = "SCNTechnique watchOS App Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8E4EA282185D83A00663295 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8E4E9E82185D83A00663295 /* SCNTechnique Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4EA2C2185D83A00663295 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E8E4E9DB2185D83A00663295 /* SCNTechnique.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E89849EF21870DB700FE2AE5 /* sDisplacementMappingShader.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = sDisplacementMappingShader.metal; sourceTree = "<group>"; };
+		E8E4E9BE2185D83700663295 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		E8E4E9BF2185D83700663295 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		E8E4E9C02185D83700663295 /* Art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Art.scnassets; sourceTree = "<group>"; };
+		E8E4E9C12185D83900663295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8E4E9C62185D83900663295 /* SCNTechnique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCNTechnique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E4E9C92185D83900663295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8E4E9CA2185D83900663295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8E4E9CC2185D83900663295 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E8E4E9CD2185D83900663295 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		E8E4E9D02185D83900663295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8E4E9D32185D83A00663295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8E4E9D52185D83A00663295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E4E9D62185D83A00663295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E4E9DA2185D83A00663295 /* SCNTechnique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCNTechnique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E4E9E02185D83A00663295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E8E4E9E22185D83A00663295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E4E9E72185D83A00663295 /* SCNTechnique Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SCNTechnique Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E4E9EC2185D83A00663295 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		E8E4E9ED2185D83A00663295 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		E8E4E9EF2185D83A00663295 /* ExtensionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtensionDelegate.h; sourceTree = "<group>"; };
+		E8E4E9F02185D83A00663295 /* ExtensionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtensionDelegate.m; sourceTree = "<group>"; };
+		E8E4E9F22185D83A00663295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E4E9F72185D83A00663295 /* SCNTechnique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCNTechnique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E4E9F92185D83A00663295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8E4E9FA2185D83A00663295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8E4E9FC2185D83A00663295 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E8E4E9FD2185D83A00663295 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		E8E4EA002185D83A00663295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8E4EA022185D83A00663295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E4EA032185D83A00663295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E4EA092185D83A00663295 /* SCNTechnique.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCNTechnique.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8E4EA0B2185D83A00663295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E8E4EA0C2185D83A00663295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E8E4EA0E2185D83A00663295 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		E8E4EA0F2185D83A00663295 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		E8E4EA122185D83A00663295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8E4EA142185D83A00663295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8E4EA152185D83A00663295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E8E4EA362185D91900663295 /* SharedConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharedConfiguration.h; sourceTree = "<group>"; };
+		E8E4EA372185E3CA00663295 /* sDisplacementMappingTechnique.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sDisplacementMappingTechnique.json; sourceTree = "<group>"; };
+		E8E4EA3C2185E5A300663295 /* sDisplacementMappingShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = sDisplacementMappingShader.vsh; sourceTree = "<group>"; };
+		E8E4EA402185E5EC00663295 /* sDisplacementMappingShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = sDisplacementMappingShader.fsh; sourceTree = "<group>"; };
+		E8E4EA50218600B800663295 /* mirror-noise.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mirror-noise.jpg"; sourceTree = "<group>"; };
+		E8E4EA552186024700663295 /* alpha-mask.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "alpha-mask.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8E4E9C32185D83900663295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E9E42185D83A00663295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E9F42185D83A00663295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4EA062185D83A00663295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8E4E9B82185D83700663295 = {
+			isa = PBXGroup;
+			children = (
+				E8E4E9BD2185D83700663295 /* SCNTechnique Shared */,
+				E8E4E9C82185D83900663295 /* SCNTechnique iOS */,
+				E8E4E9DE2185D83A00663295 /* SCNTechnique watchOS App */,
+				E8E4E9EB2185D83A00663295 /* SCNTechnique watchOS App Extension */,
+				E8E4E9F82185D83A00663295 /* SCNTechnique tvOS */,
+				E8E4EA0A2185D83A00663295 /* SCNTechnique macOS */,
+				E8E4E9C72185D83900663295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8E4E9BD2185D83700663295 /* SCNTechnique Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E89849EF21870DB700FE2AE5 /* sDisplacementMappingShader.metal */,
+				E8E4EA552186024700663295 /* alpha-mask.jpg */,
+				E8E4EA50218600B800663295 /* mirror-noise.jpg */,
+				E8E4E9BE2185D83700663295 /* GameController.h */,
+				E8E4E9BF2185D83700663295 /* GameController.m */,
+				E8E4E9C02185D83700663295 /* Art.scnassets */,
+				E8E4E9C12185D83900663295 /* Assets.xcassets */,
+				E8E4EA362185D91900663295 /* SharedConfiguration.h */,
+				E8E4EA402185E5EC00663295 /* sDisplacementMappingShader.fsh */,
+				E8E4EA3C2185E5A300663295 /* sDisplacementMappingShader.vsh */,
+				E8E4EA372185E3CA00663295 /* sDisplacementMappingTechnique.json */,
+			);
+			path = "SCNTechnique Shared";
+			sourceTree = "<group>";
+		};
+		E8E4E9C72185D83900663295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4E9C62185D83900663295 /* SCNTechnique.app */,
+				E8E4E9DA2185D83A00663295 /* SCNTechnique.app */,
+				E8E4E9E72185D83A00663295 /* SCNTechnique Extension.appex */,
+				E8E4E9F72185D83A00663295 /* SCNTechnique.app */,
+				E8E4EA092185D83A00663295 /* SCNTechnique.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8E4E9C82185D83900663295 /* SCNTechnique iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4E9C92185D83900663295 /* AppDelegate.h */,
+				E8E4E9CA2185D83900663295 /* AppDelegate.m */,
+				E8E4E9CC2185D83900663295 /* GameViewController.h */,
+				E8E4E9CD2185D83900663295 /* GameViewController.m */,
+				E8E4E9CF2185D83900663295 /* Main.storyboard */,
+				E8E4E9D22185D83A00663295 /* LaunchScreen.storyboard */,
+				E8E4E9D52185D83A00663295 /* Info.plist */,
+				E8E4E9D62185D83A00663295 /* main.m */,
+			);
+			path = "SCNTechnique iOS";
+			sourceTree = "<group>";
+		};
+		E8E4E9DE2185D83A00663295 /* SCNTechnique watchOS App */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4E9DF2185D83A00663295 /* Interface.storyboard */,
+				E8E4E9E22185D83A00663295 /* Info.plist */,
+			);
+			path = "SCNTechnique watchOS App";
+			sourceTree = "<group>";
+		};
+		E8E4E9EB2185D83A00663295 /* SCNTechnique watchOS App Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4E9EC2185D83A00663295 /* InterfaceController.h */,
+				E8E4E9ED2185D83A00663295 /* InterfaceController.m */,
+				E8E4E9EF2185D83A00663295 /* ExtensionDelegate.h */,
+				E8E4E9F02185D83A00663295 /* ExtensionDelegate.m */,
+				E8E4E9F22185D83A00663295 /* Info.plist */,
+			);
+			path = "SCNTechnique watchOS App Extension";
+			sourceTree = "<group>";
+		};
+		E8E4E9F82185D83A00663295 /* SCNTechnique tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4E9F92185D83A00663295 /* AppDelegate.h */,
+				E8E4E9FA2185D83A00663295 /* AppDelegate.m */,
+				E8E4E9FC2185D83A00663295 /* GameViewController.h */,
+				E8E4E9FD2185D83A00663295 /* GameViewController.m */,
+				E8E4E9FF2185D83A00663295 /* Main.storyboard */,
+				E8E4EA022185D83A00663295 /* Info.plist */,
+				E8E4EA032185D83A00663295 /* main.m */,
+			);
+			path = "SCNTechnique tvOS";
+			sourceTree = "<group>";
+		};
+		E8E4EA0A2185D83A00663295 /* SCNTechnique macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8E4EA0B2185D83A00663295 /* AppDelegate.h */,
+				E8E4EA0C2185D83A00663295 /* AppDelegate.m */,
+				E8E4EA0E2185D83A00663295 /* GameViewController.h */,
+				E8E4EA0F2185D83A00663295 /* GameViewController.m */,
+				E8E4EA112185D83A00663295 /* Main.storyboard */,
+				E8E4EA142185D83A00663295 /* Info.plist */,
+				E8E4EA152185D83A00663295 /* main.m */,
+			);
+			path = "SCNTechnique macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8E4E9C52185D83900663295 /* SCNTechnique iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E4EA2D2185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique iOS" */;
+			buildPhases = (
+				E8E4E9C22185D83900663295 /* Sources */,
+				E8E4E9C32185D83900663295 /* Frameworks */,
+				E8E4E9C42185D83900663295 /* Resources */,
+				E8E4EA2C2185D83A00663295 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E4E9DD2185D83A00663295 /* PBXTargetDependency */,
+			);
+			name = "SCNTechnique iOS";
+			productName = "SCNTechnique iOS";
+			productReference = E8E4E9C62185D83900663295 /* SCNTechnique.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8E4E9D92185D83A00663295 /* SCNTechnique watchOS App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E4EA292185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique watchOS App" */;
+			buildPhases = (
+				E8E4E9D82185D83A00663295 /* Resources */,
+				E8E4EA282185D83A00663295 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8E4E9EA2185D83A00663295 /* PBXTargetDependency */,
+			);
+			name = "SCNTechnique watchOS App";
+			productName = "SCNTechnique watchOS App";
+			productReference = E8E4E9DA2185D83A00663295 /* SCNTechnique.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E8E4E9E62185D83A00663295 /* SCNTechnique watchOS App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E4EA252185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique watchOS App Extension" */;
+			buildPhases = (
+				E8E4E9E32185D83A00663295 /* Sources */,
+				E8E4E9E42185D83A00663295 /* Frameworks */,
+				E8E4E9E52185D83A00663295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SCNTechnique watchOS App Extension";
+			productName = "SCNTechnique watchOS App Extension";
+			productReference = E8E4E9E72185D83A00663295 /* SCNTechnique Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		E8E4E9F62185D83A00663295 /* SCNTechnique tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E4EA302185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique tvOS" */;
+			buildPhases = (
+				E8E4E9F32185D83A00663295 /* Sources */,
+				E8E4E9F42185D83A00663295 /* Frameworks */,
+				E8E4E9F52185D83A00663295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SCNTechnique tvOS";
+			productName = "SCNTechnique tvOS";
+			productReference = E8E4E9F72185D83A00663295 /* SCNTechnique.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8E4EA082185D83A00663295 /* SCNTechnique macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8E4EA332185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique macOS" */;
+			buildPhases = (
+				E8E4EA052185D83A00663295 /* Sources */,
+				E8E4EA062185D83A00663295 /* Frameworks */,
+				E8E4EA072185D83A00663295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SCNTechnique macOS";
+			productName = "SCNTechnique macOS";
+			productReference = E8E4EA092185D83A00663295 /* SCNTechnique.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8E4E9B92185D83700663295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Doron Adler";
+				TargetAttributes = {
+					E8E4E9C52185D83900663295 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E8E4E9D92185D83A00663295 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E8E4E9E62185D83A00663295 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E8E4E9F62185D83A00663295 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					E8E4EA082185D83A00663295 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = E8E4E9BC2185D83700663295 /* Build configuration list for PBXProject "SCNTechnique" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8E4E9B82185D83700663295;
+			productRefGroup = E8E4E9C72185D83900663295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8E4E9C52185D83900663295 /* SCNTechnique iOS */,
+				E8E4E9D92185D83A00663295 /* SCNTechnique watchOS App */,
+				E8E4E9E62185D83A00663295 /* SCNTechnique watchOS App Extension */,
+				E8E4E9F62185D83A00663295 /* SCNTechnique tvOS */,
+				E8E4EA082185D83A00663295 /* SCNTechnique macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8E4E9C42185D83900663295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4EA3D2185E5A300663295 /* sDisplacementMappingShader.vsh in Resources */,
+				E8E4EA382185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */,
+				E8E4E9D12185D83900663295 /* Main.storyboard in Resources */,
+				E8E4E9D42185D83A00663295 /* LaunchScreen.storyboard in Resources */,
+				E8E4EA1F2185D83A00663295 /* Assets.xcassets in Resources */,
+				E8E4EA562186024700663295 /* alpha-mask.jpg in Resources */,
+				E8E4EA1B2185D83A00663295 /* Art.scnassets in Resources */,
+				E8E4EA51218600B900663295 /* mirror-noise.jpg in Resources */,
+				E8E4EA412185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E9D82185D83A00663295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4EA202185D83A00663295 /* Assets.xcassets in Resources */,
+				E8E4E9E12185D83A00663295 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E9E52185D83A00663295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4EA52218600B900663295 /* mirror-noise.jpg in Resources */,
+				E8E4EA422185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */,
+				E8E4EA572186024700663295 /* alpha-mask.jpg in Resources */,
+				E8E4EA3E2185E5A300663295 /* sDisplacementMappingShader.vsh in Resources */,
+				E8E4EA392185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */,
+				E8E4EA1C2185D83A00663295 /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E9F52185D83A00663295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4EA3A2185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */,
+				E8E4EA4A2185E94900663295 /* sDisplacementMappingShader.vsh in Resources */,
+				E8E4EA012185D83A00663295 /* Main.storyboard in Resources */,
+				E8E4EA212185D83A00663295 /* Assets.xcassets in Resources */,
+				E8E4EA582186024700663295 /* alpha-mask.jpg in Resources */,
+				E8E4EA53218600B900663295 /* mirror-noise.jpg in Resources */,
+				E8E4EA432185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */,
+				E8E4EA1D2185D83A00663295 /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4EA072185D83A00663295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4EA3B2185E3CA00663295 /* sDisplacementMappingTechnique.json in Resources */,
+				E8E4EA132185D83A00663295 /* Main.storyboard in Resources */,
+				E8E4EA222185D83A00663295 /* Assets.xcassets in Resources */,
+				E8E4EA3F2185E5A300663295 /* sDisplacementMappingShader.vsh in Resources */,
+				E8E4EA592186024700663295 /* alpha-mask.jpg in Resources */,
+				E8E4EA54218600B900663295 /* mirror-noise.jpg in Resources */,
+				E8E4EA442185E5EC00663295 /* sDisplacementMappingShader.fsh in Resources */,
+				E8E4EA1E2185D83A00663295 /* Art.scnassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8E4E9C22185D83900663295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4E9CE2185D83900663295 /* GameViewController.m in Sources */,
+				E8E4EA172185D83A00663295 /* GameController.m in Sources */,
+				E8E4E9D72185D83A00663295 /* main.m in Sources */,
+				E8E4E9CB2185D83900663295 /* AppDelegate.m in Sources */,
+				E89849F021870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E9E32185D83A00663295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E89849F121870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */,
+				E8E4EA182185D83A00663295 /* GameController.m in Sources */,
+				E8E4E9F12185D83A00663295 /* ExtensionDelegate.m in Sources */,
+				E8E4E9EE2185D83A00663295 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4E9F32185D83A00663295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4E9FE2185D83A00663295 /* GameViewController.m in Sources */,
+				E8E4EA192185D83A00663295 /* GameController.m in Sources */,
+				E8E4EA042185D83A00663295 /* main.m in Sources */,
+				E8E4E9FB2185D83A00663295 /* AppDelegate.m in Sources */,
+				E89849F221870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8E4EA052185D83A00663295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8E4EA102185D83A00663295 /* GameViewController.m in Sources */,
+				E8E4EA1A2185D83A00663295 /* GameController.m in Sources */,
+				E8E4EA162185D83A00663295 /* main.m in Sources */,
+				E8E4EA0D2185D83A00663295 /* AppDelegate.m in Sources */,
+				E89849F321870DB700FE2AE5 /* sDisplacementMappingShader.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8E4E9DD2185D83A00663295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E4E9D92185D83A00663295 /* SCNTechnique watchOS App */;
+			targetProxy = E8E4E9DC2185D83A00663295 /* PBXContainerItemProxy */;
+		};
+		E8E4E9EA2185D83A00663295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8E4E9E62185D83A00663295 /* SCNTechnique watchOS App Extension */;
+			targetProxy = E8E4E9E92185D83A00663295 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8E4E9CF2185D83900663295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E4E9D02185D83900663295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8E4E9D22185D83A00663295 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E4E9D32185D83A00663295 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E8E4E9DF2185D83A00663295 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E4E9E02185D83A00663295 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		E8E4E9FF2185D83A00663295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E4EA002185D83A00663295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8E4EA112185D83A00663295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8E4EA122185D83A00663295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8E4EA232185D83A00663295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		E8E4EA242185D83A00663295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+			};
+			name = Release;
+		};
+		E8E4EA262185D83A00663295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique watchOS App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "SCNTechnique Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		E8E4EA272185D83A00663295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique watchOS App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "SCNTechnique Extension";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		E8E4EA2A2185D83A00663295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				IBSC_MODULE = SCNTechnique_Extension;
+				INFOPLIST_FILE = "SCNTechnique watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique.watchkitapp;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		E8E4EA2B2185D83A00663295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				IBSC_MODULE = SCNTechnique_Extension;
+				INFOPLIST_FILE = "SCNTechnique watchOS App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique.watchkitapp;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		E8E4EA2E2185D83A00663295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8E4EA2F2185D83A00663295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8E4EA312185D83A00663295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		E8E4EA322185D83A00663295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "tvOS App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "tvOS LaunchImage";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique tvOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8E4EA342185D83A00663295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E8E4EA352185D83A00663295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BW44R526JS;
+				INFOPLIST_FILE = "SCNTechnique macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dadler.SCNTechnique;
+				PRODUCT_NAME = SCNTechnique;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8E4E9BC2185D83700663295 /* Build configuration list for PBXProject "SCNTechnique" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E4EA232185D83A00663295 /* Debug */,
+				E8E4EA242185D83A00663295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E4EA252185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique watchOS App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E4EA262185D83A00663295 /* Debug */,
+				E8E4EA272185D83A00663295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E4EA292185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique watchOS App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E4EA2A2185D83A00663295 /* Debug */,
+				E8E4EA2B2185D83A00663295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E4EA2D2185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E4EA2E2185D83A00663295 /* Debug */,
+				E8E4EA2F2185D83A00663295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E4EA302185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E4EA312185D83A00663295 /* Debug */,
+				E8E4EA322185D83A00663295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8E4EA332185D83A00663295 /* Build configuration list for PBXNativeTarget "SCNTechnique macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8E4EA342185D83A00663295 /* Debug */,
+				E8E4EA352185D83A00663295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8E4E9B92185D83700663295 /* Project object */;
+}

@@ -1,0 +1,42 @@
+{
+    "passes" : {
+        "displacement" : {
+            "outputs" : {
+                "color" : "COLOR"
+            },
+            "inputs" : {
+                "colorSampler" : "COLOR",
+                "noiseSampler" : "noiseSymbol",
+                "alphaSampler" : "alphaSymbol",
+                "a_position" : "a_position-symbol"
+            },
+            "blendStates" : {
+                
+            },
+            "program" : "sDisplacementMappingShader",
+            "metalVertexShader" : "pass_through_vertex",
+            "metalFragmentShader" : "displacement_frag",
+            "draw" : "DRAW_QUAD"
+        }
+    },
+    "sequence" : [
+        "displacement"
+    ],
+    "symbols" : {
+        "a_position-symbol" : {
+            "semantic" : "vertex"
+        },
+        "vertexSymbol" : {
+            "semantic" : "vertex"
+        },
+        "noiseSymbol" : {
+            "image" : "mirror-noise.jpg",
+            "type" : "sampler2D"
+        },
+        "alphaSymbol" : {
+            "image" : "alpha-mask.jpg",
+            "type" : "sampler2D"
+        }
+    }
+}
+
